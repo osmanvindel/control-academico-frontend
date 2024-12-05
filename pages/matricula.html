@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula - Sistema de Control Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/matricula.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Matrículas</h2>
+        <div class="content"></div>
+        <section class="matricula-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Estudiante</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="codigo">Código Estudiantil</label>
+                    <input type="text" id="codigo" name="codigo" required placeholder="Ej. 12345">
+                </div>
+                <div class="form-group">
+                    <label for="grado">Grado</label>
+                    <select id="grado" name="grado" required>
+                        <!-- Relación con tabla "grados" -->
+                        <option value="1">Primero</option>
+                        <option value="2">Segundo</option>
+                        <option value="3">Tercero</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Matrícula</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio de Matrícula</label>
+                    <input type="number" id="precio" name="precio" step="0.01" required placeholder="Ej. 50.00">
+                </div>
+                <button type="submit" class="btn-submit">Registrar Matrícula</button>
+            </form>
+        </section>
+        <section class="estudiantes-inscritos">
+            <h3>Estudiantes Inscritos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th># Matricula</th>
+                        <th>Nombre</th>
+                        <th>Grado</th>
+                        <th>Fecha</th>
+                        <th>Precio</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>Juan Pérez</td>
+                        <td>Primero</td>
+                        <td>2024-01-01</td>
+                        <td>50.00</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+    
+                    <!-- Más registros pueden ser añadidos dinámicamente aquí -->
+                </tbody>
+            </table>
+        </section>
+        <a href="alumnos.html" class="btn-volver">Volver</a>
+    </main>
+</body>
+</html>

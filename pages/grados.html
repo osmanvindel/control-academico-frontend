@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Grados - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/grados.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Grados</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="grado_codigo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="grado_nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="capacidad">Capacidad de Alumnos</label>
+                    <input type="number" id="capacidad" name="grado_capacidad_alumnos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="grado_descripcion" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Grado</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Grados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Capacidad</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+           
+                    <tr>
+                        <td>1</td>
+                        <td>GR123</td>
+                        <td>Primero</td>
+                        <td>30</td>
+                        <td>Grado de primer</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="asignaturas.html" class="btn-volver">Volver</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Asignaturas - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/asignaturas.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Asignaturas</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="asignatura_codigo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="asignatura_nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="asignatura_descripcion" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="activo">Grado</label>
+                    <select id="activo" name="periodo_activo" required>
+                        <option value="1">BTP Informatica</option>
+                        <option value="0">Administracion de empresas</option>
+                        <option value="0">Ciencias y Humanidades</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Asignatura</button>
+                <!-- <a href="../pages/grados.html" class="btn-submit btn-matricula">Grado</a> -->
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Asignaturas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+               
+                    <tr>
+                        <td>1</td>
+                        <td>Código1</td>
+                        <td>Nombre</td>
+                        <td>Descripción </td>
+                        <td>
+                            <button class="btn-edit" onclick="editarAsignatura(1)">Actualizar</button>
+                            <button class="btn-delete" onclick="eliminarAsignatura(1)">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+    </main>
+
+    <script>
+        function eliminarAsignatura(id) {
+            alert("Asignatura con ID " + id + " eliminada.");
+           
+        }
+    </script>
+</body>
+</html>

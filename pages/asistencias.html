@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Asistencias - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/asistencias.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Asistencias</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="datetime-local" id="fecha" name="asistencia_fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clase">Clase</label>
+                    <input type="text" id="clase" name="asistencia_clase" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alumno-id">Alumno ID</label>
+                    <input type="text" id="alumno-id" name="fk_alumno_id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="maestro-id">Maestro ID</label>
+                    <input type="text" id="maestro-id" name="fk_maestro_id" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Asistencia</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Asistencias</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Clase</th>
+                        <th>Alumno ID</th>
+                        <th>Maestro ID</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2024-12-03 10:00</td>
+                        <td>Matemáticas</td>
+                        <td>123</td>
+                        <td>456</td>
+                        <td>
+                            <button class="btn-edit" onclick="editarAsistencia(1)">Actualizar</button>
+                            <!-- <button class="btn-delete" onclick="eliminarAsistencia(1)">Eliminar</button> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+    </main>
+
+    <script>
+        function eliminarAsistencia(id) {
+            alert("Asistencia con ID " + id + " eliminada.");
+          
+        }
+    </script>
+</body>
+</html>

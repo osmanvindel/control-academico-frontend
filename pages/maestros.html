@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Maestros - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/maestros.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Maestros</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="cedula">Cedula</label>
+                    <input type="text" id="cedula" name="persona_cedula" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="persona_nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="persona_apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="persona_correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Telefono(s)</label>
+                    <input type="email" id="correo" name="persona_correo" required placeholder="99999999">
+                </div>
+                <div class="form-group">
+                    <label for="departamento">Departamento</label>
+                    <input type="text" id="departamento" name="direccion_departamento" required>
+                </div>
+                <div class="form-group">
+                    <label for="municipio">Municipio</label>
+                    <input type="text" id="municipio" name="direccion_municipio" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="direccion_ciudad" required>
+                </div>
+                <div class="form-group">
+                    <label for="barrio">Barrio/Colonia</label>
+                    <input type="text" id="barrio" name="direccion_barrio_colonia" required>
+                </div>
+                <div class="form-group">
+                    <label for="referencia">Referencia</label>
+                    <textarea id="referencia" name="direccion_referencia" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Registrar Maestro</button>
+            </form>
+        </section>
+        
+        <section class="tabla-registros">
+            <h3>Lista de Maestros</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cédula</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Departamento</th>
+                        <th>Municipio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123456789</td>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>juan.perez@email.com</td>
+                        <td>99999999</td>
+                        <td>Atlántico</td>
+                        <td>Puerto</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </section>
+        
+        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+    </main>
+
+    <script>
+        function eliminarDireccion(id) {
+            if (confirm("¿Estás seguro de que deseas eliminar esta dirección?")) {
+                alert("Dirección con ID " + id + " eliminada.");
+                // Aquí va la lógica para eliminar la dirección con el ID especificado
+            }
+        }
+    </script>
+</body>
+</html>

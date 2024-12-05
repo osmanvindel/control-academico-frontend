@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Calificaciones - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/gestion_calificacion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Calificaciones</h2>
+        <div class="content"></div>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="estudiante">Código del Estudiante</label>
+                    <input type="text" id="estudiante" name="estudiante" required>
+                </div>
+                <div class="form-group">
+                    <label for="materia">Materia</label>
+                    <select id="materia" name="materia" required>
+                        <option value="1">Matemáticas</option>
+                        <option value="2">Ciencias</option>
+                        <option value="3">Historia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="calificacion">Calificación</label>
+                    <input type="number" id="calificacion" name="calificacion" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Registro</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <button type="submit" class="btn-submit">Registrar Calificación</button>
+            </form>
+        </section>
+        <section class="calificaciones-registradas">
+            <h3>Calificaciones Registradas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código del Estudiante</th>
+                        <th>Materia</th>
+                        <th>Calificación</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th> <!-- Nueva columna para los botones de acción -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán dinámicamente los registros de la tabla "calificaciones" -->
+                    <tr>
+                        <td>12345</td>
+                        <td>Matemáticas</td>
+                        <td>85</td>
+                        <td>2024</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Más registros pueden ser añadidos dinámicamente aquí -->
+                </tbody>
+            </table>
+        </section>
+        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+    </main>
+</body>
+</html>

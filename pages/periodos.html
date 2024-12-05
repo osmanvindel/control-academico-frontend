@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Periodos - Sistema Académico</title>
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <link rel="stylesheet" href="../styles/periodos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sistema Académico</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Gestión de Periodos</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="periodo_codigo" required placeholder="Ej. 2024-1">
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-inicio">Fecha de Inicio</label>
+                    <input type="datetime-local" id="fecha-inicio" name="periodo_fecha_inicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-fin">Fecha de Fin</label>
+                    <input type="datetime-local" id="fecha-fin" name="periodo_fecha_fin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activo">Activo</label>
+                    <select id="activo" name="periodo_activo" required>
+                        <option value="1">Sí</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Periodo</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Periodos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Fin</th>
+                        <th>Activo</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+            
+                    <tr>
+                        <td>1</td>
+                        <td>2024-1</td>
+                        <td>2024-01-01 09:00</td>
+                        <td>2024-06-30 17:00</td>
+                        <td>Sí</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>    
+                </tbody>
+            </table>
+        </section>
+        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+    </main>
+</body>
+</html>
