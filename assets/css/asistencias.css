@@ -1,41 +1,4 @@
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-
-header {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .logo h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #4e54c8;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-.matricula-form {
+.gestion-form {
     background: #ffffff;
     padding: 20px;
     margin: 20px auto;
@@ -44,19 +7,19 @@ h2 {
     max-width: 600px;
 }
 
-.matricula-form .form-group {
+.gestion-form .form-group {
     margin-bottom: 15px;
 }
 
-.matricula-form label {
+.gestion-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #4e54c8;
 }
 
-.matricula-form input,
-.matricula-form select {
+.gestion-form input,
+.gestion-form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -64,14 +27,14 @@ h2 {
     font-size: 1rem;
 }
 
-.matricula-form input:focus,
-.matricula-form select:focus {
+.gestion-form input:focus,
+.gestion-form select:focus {
     border-color: #4e54c8;
     outline: none;
     box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
 }
 
-.matricula-form .btn-submit {
+.gestion-form .btn-submit {
     background: linear-gradient(to right, #8f94fb, #4e54c8);
     color: white;
     padding: 10px 15px;
@@ -81,24 +44,26 @@ h2 {
     font-size: 1rem;
     text-transform: uppercase;
     transition: background 0.3s;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
 }
 
-.matricula-form .btn-submit:hover {
+.gestion-form .btn-submit:hover {
     background: linear-gradient(to right, #4e54c8, #8f94fb);
 }
 
-
-.estudiantes-inscritos {
+.tabla-registros {
     margin-top: 40px;
     text-align: center;
 }
 
-.estudiantes-inscritos h3 {
+.tabla-registros h3 {
     color: #4e54c8;
     margin-bottom: 20px;
 }
 
-.estudiantes-inscritos table {
+.tabla-registros table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
@@ -106,22 +71,51 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.estudiantes-inscritos th,
-.estudiantes-inscritos td {
+.tabla-registros th,
+.tabla-registros td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
 }
 
-.estudiantes-inscritos th {
+.tabla-registros th {
     background-color: #4e54c8;
     color: white;
 }
 
-.estudiantes-inscritos tr:nth-child(even) {
+.tabla-registros tr:nth-child(even) {
     background-color: #f4f4f9;
 }
 
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-edit {
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #8f94fb;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #f39c12;
+}
 
 .btn-volver {
     display: block;
@@ -139,28 +133,4 @@ h2 {
 
 .btn-volver:hover {
     background: #8f94fb;
-}
-
-
-.btn-edit, .btn-delete {
-    background: linear-gradient(to right, #8f94fb, #4e54c8);
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    transition: background 0.3s;
-    margin: 0 5px;  
-    display: inline-block; 
-}
-
-.btn-edit:hover, .btn-delete:hover {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-}
-
-
-.tabla-registros td button {
-    margin: 0 5px;
 }

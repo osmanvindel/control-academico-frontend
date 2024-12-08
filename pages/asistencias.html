@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Asistencias - Sistema Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/asistencias.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/asistencias.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
+    <header id="header">
+
     </header>
     <main>
         <h2>Gestión de Asistencias</h2>
@@ -50,7 +50,7 @@
                         <th>Clase</th>
                         <th>Alumno ID</th>
                         <th>Maestro ID</th>
-                        <th>Acciones</th> 
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,14 +69,21 @@
                 </tbody>
             </table>
         </section>
-        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
     </main>
 
     <script>
         function eliminarAsistencia(id) {
             alert("Asistencia con ID " + id + " eliminada.");
-          
+
         }
     </script>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,128 @@
+/* Estilo de la tabla */
+.tabla-registros {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tabla-registros table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    /* Reducido para hacerlo más pequeño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-registros th,
+.tabla-registros td {
+    padding: 12px 15px;
+    /* Ajustado el espaciado */
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.tabla-registros th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+/* Ajuste del ancho de las columnas */
+.tabla-registros th:nth-child(1),
+.tabla-registros td:nth-child(1) {
+    width: 8%;
+    /* Reducido */
+}
+
+.tabla-registros th:nth-child(2),
+.tabla-registros td:nth-child(2) {
+    width: 12%;
+    /* Reducido */
+}
+
+.tabla-registros th:nth-child(3),
+.tabla-registros td:nth-child(3) {
+    width: 10%;
+    /* Reducido */
+}
+
+.tabla-registros th:nth-child(4),
+.tabla-registros td:nth-child(4) {
+    width: 10%;
+    /* Reducido */
+}
+
+.tabla-registros th:nth-child(5),
+.tabla-registros td:nth-child(5) {
+    width: 18%;
+    /* Reducido */
+}
+
+.tabla-registros th:nth-child(6),
+.tabla-registros td:nth-child(6) {
+    width: 10%;
+    /* Reducido */
+}
+
+/* Estilo para los botones de editar y eliminar */
+.btn-edit,
+.btn-delete {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #8f94fb;
+}
+
+.btn-matricula {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    max-width: 215px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-matricula:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}

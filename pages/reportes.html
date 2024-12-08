@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportes - Sistema de Control Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/reportes.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/reportes.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
+    <header id="header">
+
     </header>
 
     <main>
@@ -58,7 +58,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                 
                     <tr>
                         <td>Juan Pérez</td>
                         <td>Matemáticas</td>
@@ -69,12 +68,18 @@
                             <button class="btn-delete">Eliminar</button>
                         </td>
                     </tr>
-     
                 </tbody>
             </table>
         </section> -->
 
-        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
     </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>

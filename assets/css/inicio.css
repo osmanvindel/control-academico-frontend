@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +5,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
-
-
-header {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .logo h1 {
-    font-size: 2.5em;
-    font-weight: bold; 
-    letter-spacing: 1px;
-}
-
 
 main {
     padding: 60px 20px;
@@ -38,7 +19,7 @@ main {
 h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #4e54c8; 
+    color: #4e54c8;
 }
 
 .content p {
@@ -78,7 +59,7 @@ h2 {
 .service .icon {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #4e54c8; 
+    color: #4e54c8;
 }
 
 .service h3 {

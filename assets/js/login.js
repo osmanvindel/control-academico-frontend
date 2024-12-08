@@ -11,7 +11,6 @@ var caja_trasera_login = document.querySelector(".caja__trasera-login");
 var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
 
-
 function anchoPage(){
 
     if (window.innerWidth > 850){

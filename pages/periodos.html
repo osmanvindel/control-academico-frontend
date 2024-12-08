@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Periodos - Sistema Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/periodos.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/periodos.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
+    <header id="header">
     </header>
     <main>
         <h2>Gestión de Periodos</h2>
@@ -53,11 +52,11 @@
                         <th>Fecha de Inicio</th>
                         <th>Fecha de Fin</th>
                         <th>Activo</th>
-                        <th>Acciones</th> 
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-            
+
                     <tr>
                         <td>1</td>
                         <td>2024-1</td>
@@ -68,11 +67,18 @@
                             <button class="btn-edit">Actualizar</button>
                             <button class="btn-delete">Eliminar</button>
                         </td>
-                    </tr>    
+                    </tr>
                 </tbody>
             </table>
         </section>
-        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
     </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>

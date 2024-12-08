@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Control Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
+    <title>Control academico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
-    </header>
+    <header id="header"></header>
     <main>
         <!-- Prueba Git-->
         <section class="services">
-            <a href="alumnos.html">
+            <a href="../pages/alumnos.html">
                 <div class="service" id="alumnos-service">
                     <div class="icon"><i class="fas fa-users"></i></div>
                     <h3>Alumnos</h3>
                 </div>
             </a>
-            <a href="asignaturas.html">
+            <a href="../pages/asignaturas.html">
                 <div class="service" id="asignaturas-service">
                     <div class="icon"><i class="fas fa-book"></i></div>
                     <h3>Asignaturas</h3>
                 </div>
             </a>
-            <a href="maestros.html">
+            <a href="../pages/maestros.html">
                 <div class="service" id="maestros-service">
                     <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
                     <h3>Maestros</h3>
                 </div>
             </a>
-            
-            <a href="gestion_calificaciones.html">
+
+            <a href="../pages/calificaciones.html">
                 <div class="service" id="gestion-calificaciones-service">
                     <div class="icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>Gestión de Calificaciones</h3>
                 </div>
             </a>
-            <a href="periodos.html">
+            <a href="../pages/periodos.html">
                 <div class="service" id="periodos-service">
                     <div class="icon"><i class="fas fa-calendar-alt"></i></div>
                     <h3>Periodos Académicos</h3>
                 </div>
-            </a>  
-            <a href="asistencias.html">
+            </a>
+            <a href="../pages/asistencias.html">
                 <div class="service" id="asistencias-service">
                     <div class="icon"><i class="fas fa-check-circle"></i></div>
                     <h3>Asistencias</h3>
                 </div>
-            </a>   
-            <a href="reportes.html">
+            </a>
+            <a href="../pages/reportes.html">
                 <div class="service" id="reportes-service">
                     <div class="icon"><i class="fas fa-chart-pie"></i></div>
                     <h3>Reportes</h3>
                 </div>
-            </a>   
-            <a href="configuracion.html">
+            </a>
+            <a href="../pages/configuraciones.html">
                 <div class="service" id="configuracion-service">
                     <div class="icon"><i class="fas fa-tools"></i></div>
                     <h3>Configuración</h3>
                 </div>
             </a>
-            <a href="padre_familia.html">
+            <a href="/pages/padres.html">
                 <div class="service" id="configuracion-service">
                     <div class="icon"><i class="fas fa-id-card-alt"></i></div>
                     <h3>Padre de Familia</h3>
@@ -73,5 +72,12 @@
             </a>
         </section>
     </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>

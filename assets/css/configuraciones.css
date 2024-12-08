@@ -1,47 +1,6 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    color: white;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-header .logo h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
 /* Main Section */
 main {
     padding: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4e54c8;
-    text-align: center;
 }
 
 /* Toggle Buttons */

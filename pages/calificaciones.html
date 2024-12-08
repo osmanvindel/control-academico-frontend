@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Calificaciones - Sistema Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/gestion_calificacion.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/calificaciones.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
-    </header>
+    <header id="header"></header>
     <main>
         <h2>Gestión de Calificaciones</h2>
         <div class="content"></div>
@@ -69,7 +65,13 @@
                 </tbody>
             </table>
         </section>
-        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
     </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                cargarComponente('../components/header.html', 'header');
+            });
+        </script>
 </body>
 </html>

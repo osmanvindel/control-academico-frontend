@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Grados - Sistema Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/grados.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/grados.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
-    </header>
+    <header id="header"></header>
     <main>
         <h2>Gestión de Grados</h2>
         <section class="gestion-form">
@@ -50,11 +48,11 @@
                         <th>Nombre</th>
                         <th>Capacidad</th>
                         <th>Descripción</th>
-                        <th>Acciones</th> 
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-           
+
                     <tr>
                         <td>1</td>
                         <td>GR123</td>
@@ -71,5 +69,12 @@
         </section>
         <a href="asignaturas.html" class="btn-volver">Volver</a>
     </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>

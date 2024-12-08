@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Asignaturas - Sistema Académico</title>
-    <link rel="stylesheet" href="../styles/inicio.css">
-    <link rel="stylesheet" href="../styles/asignaturas.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/asignaturas.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <h1>Sistema Académico</h1>
-        </div>
+    <header id="header">
+
     </header>
     <main>
         <h2>Gestión de Asignaturas</h2>
@@ -54,11 +54,11 @@
                         <th>Código</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
-                        <th>Acciones</th> 
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-               
+
                     <tr>
                         <td>1</td>
                         <td>Código1</td>
@@ -72,14 +72,21 @@
                 </tbody>
             </table>
         </section>
-        <a href="Proyecto.html" class="btn-volver">Volver al inicio</a>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
     </main>
 
     <script>
         function eliminarAsignatura(id) {
             alert("Asignatura con ID " + id + " eliminada.");
-           
+
         }
     </script>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
 </body>
+
 </html>
